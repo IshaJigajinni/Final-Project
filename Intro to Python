@@ -1,0 +1,72 @@
+import random
+
+print ("Welcome to the Coin Flipping Game!")
+player_wins= 0
+
+choice= input("Choose your side (Heads/Tails):")
+
+num=random.randint(1,2)
+if num==1:
+    result= "Heads"
+elif num==2:
+    result= "Tails"
+
+if choice==result:
+    print("Good Job, you won this round. To win the game, keep playing to get a best out of three.")
+    player_wins= player_wins+1
+else:
+    print("Oh No, you lost this round. To win the game, keep playing to get a best out of three.")
+if player_wins== 1:
+    print("Score: (1/3)")
+if player_wins== 0:
+    print("Score: (0/3)")
+
+print("Next Round")
+
+
+choice= input("Choose your side (Heads/Tails):")
+
+if num==1:
+    result= "Heads"
+elif num==2:
+    result= "Tails"
+
+if choice==result:
+    print("Good Job, you won this round. To win the game, keep playing to get a best out of three.")
+    player_wins= player_wins+1
+else:
+    print("Oh No, you lost this round. To win the game, keep playing to get a best out of three.")
+if player_wins== 2:
+        print("Score: (2/3)")
+if player_wins== 1:
+    print("Score: (1/3)")
+if player_wins== 0:
+    print("Score: (0/3)")
+
+print("Last Round!")
+
+choice= input("Choose your side (Heads/Tails):")
+
+if num==1:
+    result= "Heads"
+elif num==2:
+    result= "Tails"
+
+if choice==result:
+    print("Good Job, you won this round.")
+    player_wins= player_wins+1
+else:
+    print("Oh No, you lost this round.")
+
+if player_wins >= 2:
+    print ("Great Job, you've won the best out of three!")
+if player_wins < 2:
+        print ("Sorry,you lost the best out of three :/")
+if player_wins== 3:
+        print("Score: (3/3) Perfect!")
+if player_wins== 2:
+        print("Score: (2/3)")
+if player_wins== 1:
+    print("Score: (1/3)")
+if player_wins== 0:
+    print("Score: (0/3)")
