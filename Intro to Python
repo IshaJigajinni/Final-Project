@@ -1,4 +1,5 @@
 import random
+import datetime
 
 print ("Welcome to the Coin Flipping Game!")
 player_wins= 0
